@@ -462,6 +462,19 @@ fDoSomething({
 </details>
 
 
+<details><summary><strong>"random" numbers</strong></summary>
+
+```javascript
+
+let maxVal = 99;
+for (let i = 0; i < 11; i++) {
+   setTimeout(() => console.log("random value " + i + ": " + (new Date() % maxVal) + "  /  " + (Math.floor(Math.random()*maxVal))), 1000)
+}
+```
+
+</details>
+
+
 <details><summary><strong>External documentation</strong></summary>
 
 + https://www.w3schools.com/js/
