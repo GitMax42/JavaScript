@@ -15,7 +15,7 @@
 <br/>
 
 
-<details data-a="x"><summary><strong>Transpile via Babel</strong></summary>
+<details><summary><strong>Transpile via Babel</strong></summary>
 
 [Babel](https://babeljs.io/repl) is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments. 
 
@@ -28,7 +28,7 @@
 </details>
 
 
-<details class="myd"><summary><strong>Values: primitive / reference</strong></summary>
+<details><summary><strong>Values: primitive / reference</strong></summary>
 	
 * _Primitive values_ are immutable and **shared by copy**: 
 [undefined](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/undefined), 
