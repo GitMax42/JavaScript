@@ -15,7 +15,7 @@
 <br/>
 
 
-<details class="myd"><summary><strong>Transpile via Babel</strong></summary>
+<details data-a="x"><summary><strong>Transpile via Babel</strong></summary>
 
 [Babel](https://babeljs.io/repl) is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments. 
 
