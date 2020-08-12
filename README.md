@@ -475,8 +475,29 @@ for (let i = 0; i < 11; i++) {
 </details>
 
 
-<details><summary><strong>External documentation</strong></summary>
 
+
+<details><summary><strong>events bound in all elements on page</strong></summary>
+	
+```javascript
+Array.from(document.querySelectorAll('*'))
+  .reduce(function(pre, dom){
+    var evtObj = getEventListeners(dom)
+    Object.keys(evtObj).forEach(function (evt) {
+      if (typeof pre[evt] === 'undefined') {
+        pre[evt] = 0
+      }
+      pre[evt] += evtObj[evt].length
+    })
+    return pre
+  }, {})
+```
+
+</details>
+
+
+<details><summary><strong>External documentation</strong></summary>
+	
 + https://www.w3schools.com/js/
 + https://plainjs.com/
 + https://air.ghost.io/js-things-i-never-knew-existed/amp/
@@ -486,6 +507,11 @@ for (let i = 0; i < 11; i++) {
 + https://mbeaudru.github.io/modern-js-cheatsheet/
 + https://v8.dev/blog/cost-of-javascript-2019
 + [Creating a Promise around an old callback API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises#Creating_a_Promise_around_an_old_callback_API)
+
++ Chrome Snippets
+	+ https://developers.google.com/web/tools/chrome-devtools/javascript/snippets
+	+ https://bgrins.github.io/devtools-snippets/
+	+ https://github.com/bahmutov/code-snippets
 
 </details>
 
@@ -541,4 +567,3 @@ console.log("fenced code block");
 </p>
 </details>
 
--.-.-.-.-
