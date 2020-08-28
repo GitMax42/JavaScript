@@ -496,6 +496,35 @@ Array.from(document.querySelectorAll('*'))
 </details>
 
 
+
+
+
+<details><summary><strong>Date / toLocaleString </strong></summary>
+	
+```javascript
+var dm= Date.now();  // number of milliseconds elapsed since January 1, 1970 00:00:00 UTC.
+var d= new Date();
+var opt = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false };
+opt.timeZone = 'UTC';
+opt.timeZoneName = 'short';
+
+console.log(": milliseconds since 1.1.1970 ", dm);
+console.log(": current Date()=", d);
+console.log(": UTC time zone diff to local machine time=", d.getTimezoneOffset()); 
+console.log(": A: ", d.toLocaleString(navigator.language || 'de-DE', opt));
+console.log(": B: ", d.toString());
+console.log(": C: ", d.toDateString());
+console.log(": D: ", d.toGMTString());
+console.log(": E: ", d.toLocaleDateString());
+console.log(": F: ", d.toISOString());
+console.log(": G: ", d.toTimeString());
+```
+
++ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString
+
+</details>
+
+
 <details><summary><strong>External documentation</strong></summary>
 	
 + https://www.w3schools.com/js/
