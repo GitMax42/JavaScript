@@ -525,6 +525,19 @@ console.log(": G: ", d.toTimeString());
 </details>
 
 
+
+<details><summary><strong>format numbers (currency)</strong></summary>
+	
+```javascript
+var number = 123456.78987654321;
+console.log(number.toLocaleString('de-DE', { style: 'currency', currency: 'EUR', maximumFractionDigits: 4 }));
+```
+
++ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toLocaleString
+
+</details>
+
+
 <details><summary><strong>External documentation</strong></summary>
 	
 + https://www.w3schools.com/js/
