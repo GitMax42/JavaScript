@@ -538,6 +538,27 @@ console.log(number.toLocaleString('de-DE', { style: 'currency', currency: 'EUR',
 </details>
 
 
+<details><summary><strong>Template literals</strong></summary>
+enclosed by the backtick ` (grave accent) character instead of double or single quotes.
+
+
+```javascript
+let a = 10;
+let b = 20;
+console.log(`a=${a} b=${b} =>
+SUM=${a + b}`);
+
+//---
+
+console.log(String.raw`Hi\n${2+3}!`);
+```
+
+</details>
+
+
+
+
+
 <details><summary><strong>External documentation</strong></summary>
 	
 + https://www.w3schools.com/js/
