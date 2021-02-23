@@ -2,7 +2,7 @@
 > [JavaScript / ECMAScript](https://en.wikipedia.org/wiki/JavaScript) (by [Brendan Eich](https://en.wikipedia.org/wiki/Brendan_Eich) 1995) is an ECMA standard since 1997, [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) is the official name of the language.
 
 
-| ES version | ECMA | Namcwaaae |
+| ES version | ECMA | Name |
 |---|---|---|
 | ES5  | - | [ECMAScript 2009](https://www.w3schools.com/js/js_es5.asp) |
 | ES6  | - | [ECMAScript 2015](https://www.w3schools.com/js/js_es6.asp) |
@@ -432,31 +432,19 @@ if (window.foo) {
 </details>
 
 
-<details><summary><strong>Passing arguments for function</strong></summary>
+<details><summary><strong>function: object destructuring  with default parameter</strong></summary>
 
-JavaScript [arguments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)
 
 ```javascript
-function fDoSomething() {
-   if (!arguments[0]) {   // leave if nothing is passed
-      return false;
-   }
-
-   var oArgs = arguments[0],
-       arg0 = oArgs.arg0 || "NO-ARG0",
-       arg1 = oArgs.arg1 || "NO-ARG1",
-       arg2 = oArgs.arg2 || -1,
-       arg3 = oArgs.arg3 || [],
-       arg4 = oArgs.arg4 || false;
-
-    console.log("arg0=", arg0, "  arg1=", arg1, "  arg2=", arg2, "  arg3=", arg3, "  arg4=", arg4);
+function fDoSomething({pVal1, pVal2, pTime = 'today'}) {
+    return `${pVal1} ${pVal2} -> time=${pTime}?`;
 }
-
 fDoSomething({
-   arg1: "foo",
-   arg2: 5,
-   arg4: false
-}); 
+	pVal1: 'aaa',
+	pVal2: 'bbb'
+});
+```
+JavaScript [arguments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)
 ```
 
 </details>
