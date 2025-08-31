@@ -10,7 +10,12 @@
 | ES8  | - | ECMAScript 2017 |
 | ES9  | - | ECMAScript 2018 |
 | ES10 | ECMA-262 | [ECMAScript 2019](https://www.ecma-international.org/ecma-262/10.0/index.html) |
-
+| ES11 | ECMA-262 | [ECMAScript 2020](https://262.ecma-international.org/11.0/index.html) |
+| ES12 | ECMA-262 | [ECMAScript 2021](https://262.ecma-international.org/12.0/index.html) |
+| ES13 | ECMA-262 | [ECMAScript 2022](https://262.ecma-international.org/13.0/index.html) |
+| ES14 | ECMA-262 | [ECMAScript 2023](https://262.ecma-international.org/14.0/index.html) |
+| ES15 | ECMA-262 | [ECMAScript 2024](https://262.ecma-international.org/15.0/index.html) |
+| ES16 | ECMA-262 | [ECMAScript 2025](https://262.ecma-international.org/16.0/index.html) |
 
 <br/>
 
